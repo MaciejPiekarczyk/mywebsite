@@ -1,7 +1,7 @@
 import React from "react";
-import Hero from "mywebsite/components/Hero";
+import Homepage from "mywebsite/pages/Homepage";
 export default function Home() {
   return (
-    <Hero></Hero>
+    <Homepage></Homepage>
   );
 }
