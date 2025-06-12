@@ -1,11 +1,6 @@
 import React from 'react';
 
-interface ButtonRedirectProps {
-    link: string;
-    text?: string;
-}
-
-const ButtonRedirect: React.FC<ButtonRedirectProps> = ({ link, text })=> {
+const ButtonRedirect: React.FC<{link: string; text?: string}> = ({ link, text })=> {
     const handleRedirect = () => {
     window.open(link, '_blank', 'noopener,noreferrer');
 };
