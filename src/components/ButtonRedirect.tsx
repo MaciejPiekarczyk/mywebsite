@@ -1,16 +1,20 @@
 import React from 'react';
 
-const handleRedirect = () => {
-    window.open('https://github.com/MaciejPiekarczyk', '_blank', 'noopener,noreferrer');
-};
+interface ButtonRedirectProps {
+    link: string;
+    text?: string;
+}
 
-const ButtonRedirect = () => {
+const ButtonRedirect: React.FC<ButtonRedirectProps> = ({ link, text })=> {
+    const handleRedirect = () => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+};
     return (
         <button
             onClick={handleRedirect}
-            className='bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300'
+            className='bg-blue-500 text-white font-bold py-2 mx-3 px-4 rounded hover:bg-blue-700 transition duration-300'
         >
-            Go to GitHub
+            {text || 'Go to Link'}
         </button>
     );
 };

@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <div className='float-left'>
         <h1>Hero</h1>
-        <ButtonRedirect />
-    
+        <ButtonRedirect link={'https://github.com/MaciejPiekarczyk'} text={'Go to GitHub'} />
+        <ButtonRedirect link={'https://www.linkedin.com/in/maciej-piekarczyk-2a22bb35b/'} text={'Go to LinkedIn'} />    
     </div>
   )
 }
